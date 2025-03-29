@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
+import ManagerHeaderContent from "./components/ManagerHeaderContent/ManagerHeaderContent";
 
-const App = () => {
-  return (
-    <div>
-      hi ruwanthi hi
-    </div>
-  )
+function App() {
+  <ManagerHeaderContent/>
+
 }
 
-export default App
+export default App;
+
+
