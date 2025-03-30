@@ -1,12 +1,13 @@
 import React from 'react'
 import './ManagerDashboard.css'
+import ManagerHeaderContent from '../components/ManagerHeaderContent/ManagerHeaderContent'
 
 
 
 function ManagerDashboard() {
   return (
     <>
-    
+    <ManagerHeaderContent/>
     <div className="manbodycontent">
         <header className="dashboard-header">
         <h1>Welcome</h1>
@@ -25,6 +26,7 @@ function ManagerDashboard() {
       </div>
       
     </div>
+    
     </>
   )
 }
