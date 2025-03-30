@@ -1,1 +1,8 @@
 Funerla Mangement
+-- Step 1 Requiremnt Analize
+-- Step 2 SRS For Project
+-- Step 3 Design
+-- Step 4 Develop
+-- Step 5 Test (Model, Unit, DevOps)
+-- Step 6 Deploy
+-- Step Mange 
