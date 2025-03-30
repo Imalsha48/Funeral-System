@@ -6,3 +6,6 @@ Funerla Mangement
 -- Step 5 Test (Model, Unit, DevOps)
 -- Step 6 Deploy
 -- Step Mange 
+
+First Step : Date 
+-- Anlysing Requirment
