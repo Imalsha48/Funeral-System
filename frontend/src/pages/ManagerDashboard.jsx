@@ -1,9 +1,12 @@
 import React from 'react'
 import './ManagerDashboard.css'
 
+
+
 function ManagerDashboard() {
   return (
     <>
+    
     <div className="manbodycontent">
         <header className="dashboard-header">
         <h1>Welcome</h1>
