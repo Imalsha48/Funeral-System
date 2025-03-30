@@ -9,3 +9,5 @@ Funerla Mangement
 
 First Step : Date 
 -- Anlysing Requirment
+-- BA, Developer done
+-- Client Requiremnt Q&A done
