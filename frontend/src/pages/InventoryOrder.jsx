@@ -56,7 +56,14 @@ function InventoryOrder() {
           </tbody>
         </table>
       </div>
+      <div className="report-button-container fixed bottom-7 right-7">
+  <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+    Generate Report
+  </button>
+</div>
+
     </div>
+    
     </>
   )
 }
