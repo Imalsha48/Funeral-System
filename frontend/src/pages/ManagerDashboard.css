@@ -5,27 +5,32 @@
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 69vh;
+  min-height: 60vh;
+
+  
+  
 }
+
 
 .dashboard-header {
   margin-bottom: 30px;
   padding-bottom: 15px;
-  border-bottom: 2px solid #eaeaea;
+  border-bottom: 2px solid #f5efef;
 }
 
 .dashboard-header h1 {
-  color: #333;
-  font-size: 28px;
-  font-weight: 600;
+  color: #faf1f1;
+  font-size: 50px;
+  font-weight: 800;
   margin: 0;
+  margin-top: 80px;
 }
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  gap: 40px;
+  margin-top: 40px;
 }
 
 .dashboard-card {
