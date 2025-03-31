@@ -31,6 +31,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
   margin-top: 40px;
+  
 }
 
 .dashboard-card {
@@ -39,6 +40,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 200px;
 }
 
 .dashboard-card:hover {
@@ -50,8 +52,8 @@
   color: #333;
   font-size: 20px;
   margin-top: 0;
-  margin-bottom: 15px;
-  font-weight: 500;
+  margin-bottom: 25px;
+  font-weight: 700;
 }
 
 .dashboard-card p {
@@ -60,11 +62,11 @@
 }
 
 .alert-card {
-  border-left: 4px solid #ff6b6b;
+  border-left: 7px solid #ff6b6b;
 }
 
 .report-card {
-  border-left: 4px solid #4dabf7;
+  border-left: 7px solid #4dabf7;
 }
 
 
