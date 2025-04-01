@@ -16,9 +16,17 @@ function Inventory() {
       ];
     
       const handleDelete = (id) => {
-        
         console.log(`Delete item with ID: ${id}`);
       };
+
+      const handleSearch = () => {
+        console.log("Search button clicked");
+      };
+      
+      const handleAddItem = () => {
+        console.log("Add item button clicked");
+      };
+
   return (
     <>
     <ManagerHeaderContent/>
@@ -26,6 +34,48 @@ function Inventory() {
       <header className="inventory-header">
         <h1>Stock</h1>
       </header>
+
+      {/* Search and Add Item Section */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', margin: '20px 0', alignItems: 'center' }}>
+        {/* Search bar and button - left side */}
+        <div style={{ display: 'flex', gap: '10px' ,marginLeft: '150px'}}>
+          <input 
+            type="text" 
+            placeholder="Search item by ID..." 
+            style={{ color: 'white',padding: '8px 12px', borderRadius: '4px', border: '1px solid #ccc', width: '250px' }}
+          />
+          <button 
+            onClick={handleSearch}
+            style={{ 
+              backgroundColor: '#1e3a5f', 
+              color: 'white', 
+              padding: '8px 16px', 
+              borderRadius: '4px', 
+              border: 'none',
+              cursor: 'pointer'
+            }}
+          >
+            Search
+          </button>
+        </div>
+        
+        {/* Add Item button - right side */}
+        <button 
+          onClick={handleAddItem}
+          style={{ 
+            backgroundColor: '#1e3a5f', 
+            color: 'white', 
+            padding: '8px 16px', 
+            borderRadius: '4px', 
+            border: 'none',
+            cursor: 'pointer',
+            fontWeight: 'medium',
+            marginRight:'150px',
+          }}
+        >
+          Add Item
+        </button>
+      </div>
 
       {/* Inventory Table */}
       <div className="inventory-table-container">
@@ -49,7 +99,6 @@ function Inventory() {
                 <td>{item.supplier}</td>
                 <td>{item.lastUpdated}</td>
                 <td>
-                  
                   <button className="edit-btn">Edit</button>
                   <button className="delete-btn" onClick={() => handleDelete(item.itemId)}>Delete</button>
                 </td>
@@ -58,10 +107,7 @@ function Inventory() {
           </tbody>
         </table>
       </div>
-
-      
     </div>
-    
     </>
   )
 }

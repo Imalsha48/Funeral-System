@@ -12,8 +12,15 @@ function Supplier() {
   ];
   
   const handleDelete = (id) => {
-    
     console.log(`Delete supplier with ID: ${id}`);
+  };
+  
+  const handleSearch = () => {
+    console.log("Search button clicked");
+  };
+  
+  const handleAddSupplier = () => {
+    console.log("Add supplier button clicked");
   };
   
   return (
@@ -23,6 +30,48 @@ function Supplier() {
       <header className="suppliers-header">
         <h1>Supplier Details</h1>
       </header>
+
+      {/* Search and Add Supplier Section */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', margin: '20px 0', alignItems: 'center' }}>
+        {/* Search bar and button - left side */}
+        <div style={{ display: 'flex', gap: '10px',marginLeft: '30px' }}>
+          <input 
+            type="text" 
+            placeholder="Search supplier by ID..." 
+            style={{color: 'white', padding: '8px 12px', borderRadius: '4px', border: '1px solid #ccc', width: '250px' }}
+          />
+          <button 
+            onClick={handleSearch}
+            style={{ 
+              backgroundColor: '#1e3a5f', 
+              color: 'white', 
+              padding: '8px 16px', 
+              borderRadius: '4px', 
+              border: 'none',
+              cursor: 'pointer'
+            }}
+          >
+            Search
+          </button>
+        </div>
+        
+        {/* Add Supplier button - right side */}
+        <button 
+          onClick={handleAddSupplier}
+          style={{ 
+            backgroundColor: '#1e3a5f', 
+            color: 'white', 
+            padding: '8px 16px', 
+            borderRadius: '4px', 
+            border: 'none',
+            cursor: 'pointer',
+            fontWeight: 'medium',
+            marginRight:'30px'
+          }}
+        >
+          Add Supplier
+        </button>
+      </div>
 
       {/* Suppliers Table */}
       <div className="suppliers-table-container">
