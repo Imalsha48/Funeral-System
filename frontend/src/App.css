@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.adminSidebarH3 {
+.adminH3 {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -49,11 +49,11 @@
   padding-right: 20px;
 }
 
-.adminDashboard {
+.dashboard {
   display: flex;
 }
 
-.adminContent{
+.content{
   flex: 1;
   margin-left: 64px;
   background-color: gray;
@@ -83,3 +83,98 @@
   margin-top: 24px;
   background-color: gray;
 }
+
+.adminDepartmentList .staffList{
+  padding: 20px;
+}
+
+.adminDepartmentList .adminDepLiContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adminDepartmentList .adminDepLiSearch{
+  padding: 2px 16px;
+}
+
+.adminDepartmentList .adminDepLiAdd{
+  padding: 8px 16px;
+  background-color: gray;
+  color: white;
+  border-radius: 8px; 
+  text-decoration: none;
+}
+
+.adminAddDepartment {
+  max-width: 768px; 
+  margin: 40px auto 0 auto; 
+  background-color: white; 
+  padding: 32px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  width: 384px; 
+}
+
+.adminH2 {
+  font-size: 24px; 
+  font-weight: bold; 
+  margin-bottom: 24px; 
+}
+
+.adminAddDepLabel1 {
+  font-size: 14px; 
+  font-weight: 500; 
+  color: gray; 
+}
+
+.adminInput {
+  margin-top: 4px;
+  display: block;
+  width: 100%; 
+  padding: 8px; 
+  border: 1px solid #D1D5DB; 
+  border-radius: 4px; 
+}
+
+.adminAddDepContent {
+  margin-top: 12px; 
+}
+
+.adminLabel2 {
+  display: block; 
+  font-size: 14px; 
+  font-weight: 500; 
+  color: gray; 
+}
+
+.adminAddDepSubmit {
+  width: 100%;
+  margin-top: 24px; 
+  background-color: gray;
+  color: white; 
+  font-weight: bold; 
+  padding: 8px 16px; 
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+.adminAddDepSubmit:hover {
+  background-color: #1F2937;
+}
+
+.addStaff{
+  max-width: 640px;
+  margin: 40px auto; 
+  background-color: white;
+  padding: 32px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.addStaffContent{
+  display: grid; 
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+

@@ -1,14 +1,15 @@
 import React from "react";
-import AdminSidebar from "../components/AdminSidebar";
-import Navbar from "../components/AdminNavbar";
-import AdminSummaryCard from "../components/AdminSummaryCard";
+import AdminSidebar from "../components/Admin/AdminSidebar";
+import AdminNavbar from "../components/Admin/AdminNavbar";
+import AdminSummaryCard from "../components/Admin/AdminSummaryCard";
+import {Outlet} from 'react-router-dom';
 
 const AdminDashboard = () => {
     return(
         <div className="adminDashboard">
             <AdminSidebar/>
             <div className="adminContent">
-                <Navbar/>
+                <AdminNavbar/>
                 <Outlet/>
             </div>
         </div>
