@@ -1,0 +1,104 @@
+.driver-management-wrapper{
+  min-height: 100vh;
+justify-content: center; 
+align-items: center;
+background: linear-gradient(135deg, #eceff1 0%, #b0bec5 100%);
+padding: 20px;
+width: 100vw;
+}
+
+.driver-management-container {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+  color: #1a2a3a;
+  margin-bottom: 20px;
+  text-align: center;
+  }
+
+  .search-bar {
+    width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  }
+
+  .add-btn {
+    padding: 10px 15px;
+  background: #1a2a3a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  }
+
+  .driver-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+  }
+
+  .driver-table th, .driver-table td {
+    border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap;
+  }
+
+  .driver-table th {
+    background: #1a2a3a;
+    color: white;
+    font-weight: bold;
+  }
+
+  .driver-table .available {
+    color: green;
+  }
+  
+  .driver-table .assigned {
+    color: orange;
+  }
+
+  .driver-table .inactive {
+    color: red;
+  }
+
+
+  .edit-btn, .assign-btn, .delete-btn {
+    padding: 6px 10px;
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .edit-btn {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .assign-btn {
+    background: #007bff;
+    color: white;
+  }
+  
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+  }
