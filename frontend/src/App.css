@@ -1,1 +1,85 @@
+.adminSidebar {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 250px; 
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
+.adminSidebarH3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.adminSidebarDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.adminSidebarDiv2 { 
+  padding: 16px;
+}
+  
+.adminSidebarIcons{
+  display: flex;         
+  align-items: center; 
+  padding-top: 10px;      
+  padding-bottom: 10px;
+  padding-left: 16px;     
+  padding-right: 16px;
+  border-radius: 4px;  
+}
+
+.adminNavbar{
+  display: flex;
+  justify-content: space-between;
+  height: 48px; 
+  background-color: gray;
+  font-size: 24px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.adminDashboard {
+  display: flex;
+}
+
+.adminContent{
+  flex: 1;
+  margin-left: 64px;
+  background-color: gray;
+  height: 800px;
+}
+
+.adminNavbarButton{
+  padding: 4px 16px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.adminSummary{
+  padding: 24px;
+}
+
+.adminSummaryH3{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.adminSummaryDiv{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 24px;
+  background-color: gray;
+}
