@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { CssBaseline } from '@mui/material';
@@ -24,6 +25,17 @@ import DriverDashboard from './pages/driver/DriverDashboard';
 import StaffDashboard from './pages/staff/StaffDashboard';
 import ProfilePage from './pages/profile/ProfilePage';
 import FeedbackAdmin from './pages/admin/feedback/FeedbackAdmin';
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";  // ✅ Corrected Home Import
+import Packages from "./pages/Packages";
+import PackageDetails from "./pages/PackageDetails";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import FuneralProcedures from "./pages/FuneralProcedures";
+import ErrorBoundary from "./components/ErrorBoundary";
+
 
 const ProtectedRoute = ({ children }) => {
   const { token } = useAuth();
@@ -54,6 +66,7 @@ const DashboardRouter = () => {
 
 function App() {
   return (
+
     <ThemeProvider theme={theme}>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
         <AuthProvider>
@@ -115,5 +128,22 @@ function App() {
     </ThemeProvider>
   );
 }
+    <Router>
+      <Header />
+      <ErrorBoundary>
+        <Routes>
+          <Route path="/" element={<Home />} />  {/* ✅ Home is now the default */}
+          <Route path="/home" element={<Home />} />
+          <Route path="/packages" element={<Packages />} />
+          <Route path="/package/:name" element={<PackageDetails />} /> 
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/funeral-procedures" element={<FuneralProcedures />} />
+        </Routes>
+      </ErrorBoundary>
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;

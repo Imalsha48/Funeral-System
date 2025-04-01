@@ -1,0 +1,79 @@
+.about-container {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+    color: #0d0505;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    background: linear-gradient(to right, #090708, #150a0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 10px rgba(255, 117, 140, 0.3);
+}
+
+p {
+    font-size: 0.875rem;  /* Smaller font size for a more compact look */
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;  /* Slightly adjusted line height for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Modern and clean font */
+    font-weight: 400;  /* Regular font weight for clarity */
+    background: linear-gradient(to right, #161616, #121313);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.team-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f3f3f3);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.team-member {
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 450px;
+    width: 100%;
+}
+
+.team-member:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
