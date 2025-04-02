@@ -1,7 +1,7 @@
 import React from "react";
-import StaffSidebar from './components/staff/StaffSidebar'
-import {Outlet} from 'react-router-dom'
+import StaffSidebar from '../components/staff/StaffSidebar'
 import StaffNavbar from "../components/Staff/StaffNavbar";
+import StaffSummary from "../components/staff/StaffSummary";
 
 const StaffDashboard = () => {
     return(
@@ -9,7 +9,7 @@ const StaffDashboard = () => {
             <StaffSidebar/>
             <div className="content">
                 <StaffNavbar/>
-                <Outlet/>
+                <StaffSummary/>
             </div>
         </div>
     )

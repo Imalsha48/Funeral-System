@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom"
+
 const StaffLeaveList = () => {
     return(
         <div>
@@ -13,9 +13,11 @@ const StaffLeaveList = () => {
                             placeholders='Search by Dep Name' 
                             className="adminDepLiSearch"/>
                                     
-                        <Link to="/staff-dashboard/add-leave" className="adminDepLiAdd">Add New Leave</Link>
-                        </div>
+                        <button className="adminDepLiAdd">Add New Leave</button>
                     </div>
+                </div>
         </div>
     )
 }
+
+export default StaffLeaveList

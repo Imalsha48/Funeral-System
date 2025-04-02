@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom"
 
 const StaffList = () => {
     return(
@@ -18,3 +17,5 @@ const StaffList = () => {
         </div>
     )
 }
+
+export default StaffList

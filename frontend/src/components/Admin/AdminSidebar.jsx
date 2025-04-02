@@ -1,6 +1,4 @@
 import React from "react";
-import {NavLink} from 'react-router-dom'
-import {FaTachometerAlt, FaUsers, FaBuilding, FaMoneyBillWave} from 'react-icons/fa'
 
 const AdminSidebar = () => {
     return(
@@ -8,32 +6,27 @@ const AdminSidebar = () => {
             <div className="adminH3">
                 <h3 className="adminSidebarDiv">Funeral Management System</h3>
             </div>
+
             <div className="adminSidebarDiv2">
-                <NavLink to="/admin-dashboard"
-                className="adminSidebarIcons">
-                    <FaTachometerAlt/>
+                <div className="adminSidebarItem">
                     <span>Dashboard</span>
-                </NavLink>
+                </div>
 
-                <NavLink to="/admin-dashboard/admin-staff" className="adminSidebarIcons">
-                    <FaUsers/>
+                <div className="adminSidebarItem">
                     <span>Staff</span>
-                </NavLink>
+                </div>
 
-                <NavLink to="/admin-dashboard/admin-departments" className="adminSidebarIcons">
-                    <FaBuilding/>
+                <div className="adminSidebarItem">
                     <span>Departments</span>
-                </NavLink>
+                </div>
 
-                <NavLink to="/admin-dashboard/admin-leaves" className="adminSidebarIcons">
-                    <FaTachometerAlt/>
+                <div className="adminSidebarItem">
                     <span>Leaves</span>
-                </NavLink>
+                </div>
 
-                <NavLink to="/admin-dashboard/admin-salary" className="adminSidebarIcons">
-                    <FaMoneyBillWave/>
+                <div className="adminSidebarItem">
                     <span>Salary</span>
-                </NavLink>
+                </div>
             </div>
         </div>
     )

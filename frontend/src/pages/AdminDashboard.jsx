@@ -1,8 +1,7 @@
 import React from "react";
 import AdminSidebar from "../components/Admin/AdminSidebar";
 import AdminNavbar from "../components/Admin/AdminNavbar";
-import AdminSummaryCard from "../components/Admin/AdminSummaryCard";
-import {Outlet} from 'react-router-dom';
+import AdminSummary from "../components/Admin/AdminSummary";
 
 const AdminDashboard = () => {
     return(
@@ -10,7 +9,7 @@ const AdminDashboard = () => {
             <AdminSidebar/>
             <div className="adminContent">
                 <AdminNavbar/>
-                <Outlet/>
+                <AdminSummary/>
             </div>
         </div>
     )

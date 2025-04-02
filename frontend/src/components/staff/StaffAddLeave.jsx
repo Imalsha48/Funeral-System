@@ -58,3 +58,5 @@ const StaffAddLeave = () => {
         </div>
     )
 }
+
+export default StaffAddLeave

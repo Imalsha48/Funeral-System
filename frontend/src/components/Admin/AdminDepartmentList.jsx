@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import {Link} from "react-router-dom"
 
 const AdminDepartmentList = () => {
     const [searchTerm, setSearchTerm] = useState("")
@@ -20,12 +19,14 @@ const AdminDepartmentList = () => {
                 placeholders='Search by Dep Name' 
                 className="adminDepLiSearch"
                 value={searchTerm}
-                onChange={filterDepartments}/>
+                onChange={handleSearchChange}/>
                 
-                <Link to="/admin-dashboard/admin-add-department" className="adminDepLiAdd">Add New Department</Link>
+                <button className="adminDepLiAdd">
+                    Add New Department
+                </button>
             </div>
-
         </div>
+        
     )
 }
 

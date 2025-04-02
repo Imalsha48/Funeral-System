@@ -1,6 +1,4 @@
 import React from "react";
-import AdminSummaryCard from "./AdminSummaryCard";
-import {FaUsers, FaBuilding, FaFileAlt, FaCheckCirle, FaHourglassHalf} from 'react-icons/fa';
 
 const AdminSummary = () => {
     return(
@@ -8,15 +6,37 @@ const AdminSummary = () => {
             <h3 className="adminSummaryH3">Dashboard Overview</h3>
             
             <div className="adminSummaryDiv">
-                <AdminSummaryCard icon={<FaUsers/>} text="Total Employees" number={13}/>
-                <AdminSummaryCard icon={<FaBuilding/>} text="Total Departments" number={3}/>
+                <div className="adminSummaryItem">
+                        <p>Total Employees</p>
+                        <p>13</p>
+                </div>
+
+                <div className="adminSummaryItem">
+                    <p>Total Departments</p>
+                    <p>3</p>
+                </div>
             </div>
             
             <div>
-                <AdminSummaryCard icon={<FaFileAlt/>} text="Leave Applied" number={5}/>
-                <AdminSummaryCard icon={<FaCheckCirle/>} text="Leave Approved" number={2}/>
-                <AdminSummaryCard icon={<FaHourglassHalf/>} text="Leave Pending" number={4}/>
-                <AdminSummaryCard icon={<FaCheckCircle/>} text="Leave Rejected" number={1}/>
+                <div className="adminSummaryItem">
+                    <p>Leave Applied</p>
+                    <p>5</p>
+                </div>
+                
+                <div className="adminSummaryItem">
+                    <p>Leave Approved</p>
+                    <p>2</p>
+                </div>
+                
+                <div className="adminSummaryItem">
+                    <p>Leave Pending</p>
+                    <p>4</p>
+                </div>
+                
+                <div className="adminSummaryItem">
+                    <p>Leave Rejected</p>
+                    <p>1</p>
+                </div>
             </div>
         </div>
     )

@@ -1,6 +1,4 @@
 import React from "react";
-import {NavLink} from 'react-router-dom'
-import {FaTachometerAlt, FaUsers, FaBuilding, FaMoneyBillWave} from 'react-icons/fa'
 
 const StaffSidebar = () => {
     return(
@@ -9,29 +7,25 @@ const StaffSidebar = () => {
                 <h3 className="adminSidebarDiv">Funeral Management System</h3>
             </div>
             <div className="adminSidebarDiv2">
-                <NavLink to="/staff-dashboard"
-                className="adminSidebarIcons">
-                    <FaTachometerAlt/>
-                    <span>Dashboard</span>
-                </NavLink>
+            <div className="adminSidebarIcons">
+                <span>Dashboard</span>
+            </div>
 
-                <NavLink to="/staff-dashboard/profile" className="adminSidebarIcons">
-                    <FaUsers/>
+            <div className="adminSidebarIcons">
                     <span>My Profile</span>
-                </NavLink>
+            </div>
 
-                <NavLink to="/staff-dashboard/admin-leaves" className="adminSidebarIcons">
-                    <FaTachometerAlt/>
+            <div className="adminSidebarIcons">
                     <span>Leaves</span>
-                </NavLink>
+            </div>
 
-                <NavLink to="/staff-dashboard/admin-salary" className="adminSidebarIcons">
-                    <FaMoneyBillWave/>
+            <div className="adminSidebarIcons">
                     <span>Salary</span>
-                </NavLink>
+            </div>
+
             </div>
         </div>
     )
 }
 
-export default StaffSidebar
+export default StaffSidebar;
