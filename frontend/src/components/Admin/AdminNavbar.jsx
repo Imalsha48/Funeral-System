@@ -2,9 +2,9 @@ import React from "react"
 
 const Navbar = () => {
     return(
-        <div className="adminNavbar">
-            <p>Welcome</p>
-            <button className="adminNavbarButton">Logout</button>
+        <div className="aNavbar">
+            <p>Welcome Admin</p>
+            <button className="an-button">Logout</button>
         </div>
     )
 }

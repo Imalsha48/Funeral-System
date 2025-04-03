@@ -12,7 +12,7 @@ const StaffList = () => {
                 placeholders='Search by Dep Name' 
                 className="adminDepLiSearch"/>
                         
-            <Link to="/admin-dashboard/add-staff" className="adminDepLiAdd">Add New Staff</Link>
+            <button type="submit" className="addStaffBtn">Add New Staff</button>
             </div>
         </div>
     )

@@ -2,29 +2,29 @@ import React from "react";
 
 const AdminSidebar = () => {
     return(
-        <div className="adminSidebar">
-            <div className="adminH3">
-                <h3 className="adminSidebarDiv">Funeral Management System</h3>
+        <div className="aSidebar">
+            <div className="as-header">
+                <h3 className="as-header">Funeral Management System</h3>
             </div>
 
-            <div className="adminSidebarDiv2">
-                <div className="adminSidebarItem">
+            <div className="as-menu">
+                <div className="as-items">
                     <span>Dashboard</span>
                 </div>
 
-                <div className="adminSidebarItem">
+                <div className="as-items">
                     <span>Staff</span>
                 </div>
 
-                <div className="adminSidebarItem">
+                <div className="as-items">
                     <span>Departments</span>
                 </div>
 
-                <div className="adminSidebarItem">
+                <div className="as-items">
                     <span>Leaves</span>
                 </div>
 
-                <div className="adminSidebarItem">
+                <div className="as-items">
                     <span>Salary</span>
                 </div>
             </div>
@@ -33,3 +33,4 @@ const AdminSidebar = () => {
 }
 
 export default AdminSidebar
+

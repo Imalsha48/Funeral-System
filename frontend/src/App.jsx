@@ -8,26 +8,25 @@ import AddStaff from "./components/Admin/AddStaff";
 import StaffSummary from "./components/staff/StaffSummary";
 import StaffLeaveList from "./components/staff/StaffLeaveList";
 import StaffAddLeave from "./components/staff/StaffAddLeave";
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import "../src/App.css"
 
 const App = () => {
-  return (
+  return (    
     <div>
-      <div>
-        <AdminDashboard>
-          <AdminSummary/>
-          <AdminDepartmentList/>
-          <AdminAddDepartment/>
-          <StaffList/>
-          <AddStaff/>
-        </AdminDashboard>
+      <BrowserRouter>
+      <Routes>
+        <Route 
+        path="/"
+        element={<AdminDashboard/>}
+        />
 
-        <StaffDashboard>
-          <StaffSummary/>
-          <StaffLeaveList/>
-          <StaffAddLeave/>
-        </StaffDashboard>
-      
-      </div>
+        <Route path='/AddStaff'
+        element={<AddStaff/>}/>
+
+        
+        </Routes>
+        </BrowserRouter>
     </div>
   )
 }

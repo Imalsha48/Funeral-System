@@ -2,40 +2,43 @@ import React from "react";
 
 const AdminSummary = () => {
     return(
-        <div className="adminSummary">
-            <h3 className="adminSummaryH3">Dashboard Overview</h3>
+        <div className="aSummary">
+            <h3 className="as-title">Dashboard Overview</h3>
             
-            <div className="adminSummaryDiv">
-                <div className="adminSummaryItem">
+            <div className="as-row">
+                <div className="as-item">
                         <p>Total Employees</p>
-                        <p>13</p>
+                        <p className="as-value">13</p>
                 </div>
 
-                <div className="adminSummaryItem">
+                <div className="as-item">
                     <p>Total Departments</p>
-                    <p>3</p>
+                    <p className="as-value">3</p>
                 </div>
             </div>
             
-            <div>
-                <div className="adminSummaryItem">
+            <div className="as-row">
+                <div className="as-item">
                     <p>Leave Applied</p>
-                    <p>5</p>
+                    <p className="as-value">5</p>
+                    
                 </div>
                 
-                <div className="adminSummaryItem">
+                <div className="as-item">
                     <p>Leave Approved</p>
-                    <p>2</p>
+                    <p className="as-value">2</p>
                 </div>
-                
-                <div className="adminSummaryItem">
+            </div>
+            
+            <div className="as-row">
+                <div className="as-item">
                     <p>Leave Pending</p>
-                    <p>4</p>
+                    <p className="as-value">4</p>
                 </div>
                 
-                <div className="adminSummaryItem">
+                <div className="as-item">
                     <p>Leave Rejected</p>
-                    <p>1</p>
+                    <p className="as-value">1</p>
                 </div>
             </div>
         </div>

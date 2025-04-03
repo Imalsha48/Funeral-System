@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-
 const AddStaff = () => {
 
     const [formData, setFormData] = useState({
@@ -31,60 +30,59 @@ const AddStaff = () => {
 
     return(
         <div className="addStaff">
-            <h2 className="addH2">Add New Staff</h2>
-            <form onSubmit={handleSubmit}>
-                <div className="addStaffContent">{/*Name*/}</div>
+            <h2 className="staff-title">Add New Staff</h2>
+            <form onSubmit={handleSubmit} className="staff-form">
 
                 <div>
-                    <label className="adminLabel2"> Name </label>
+                    <label className="form-label"> Name </label>
                     
                     <input
                         type="text"
                         name="name"
                         placeholder="Insert Name"
-                        className="adminInput"
+                        className="form-input"
                         onChange={handleChange} 
                         required/>
                 </div>
 
                <div>
-                    <label className="adminLabel2">Email</label>
+                    <label className="form-label">Email</label>
                     <input
                         type="email"
                         name="email"
                         placeholder="Insert Email"
-                        className="adminInput"
+                        className="form-input"
                         onChange={handleChange} 
                         required/>
                 </div> 
 
                 <div>
-                    <label className="adminLabel2">Staff ID</label>
+                    <label className="form-label">Staff ID</label>
                     <input
                         type="text"
                         name="employeeId"
                         placeholder="Employee ID"
-                        className="adminInput"
+                        className="form-input"
                         onChange={handleChange} 
                         required/>
                 </div>
 
                 <div>
-                    <label className="adminLabel2">Date of Birth</label>
+                    <label className="form-label">Date of Birth</label>
                     <input
                         type="date"
                         name="dob"
                         placeholder="DOB"
-                        className="adminInput"
+                        className="form-input"
                         onChange={handleChange} 
                         required/>
                 </div>
 
                 <div>
-                    <label className="adminLabel2">Gender</label>
+                    <label className="form-label">Gender</label>
                     <select
                         name="gender"
-                        className="adminInput"
+                        className="form-select"
                         onChange={handleChange} 
                         required>
                             <option value="">Select Gender</option>
@@ -94,11 +92,11 @@ const AddStaff = () => {
                 </div>
 
                 <div>
-                    <label className="adminLabel2">Marital Status</label>
+                    <label className="form-label">Marital Status</label>
                     <select
                         name="maritalStatus"
                         placeholder="Marital Status"
-                        className="adminInput"
+                        className="form-input"
                         onChange={handleChange} 
                         required>
                             <option value="">Select Status</option>
@@ -108,21 +106,21 @@ const AddStaff = () => {
                 </div>
 
                 <div>
-                    <label className="adminLabel2">Designation</label>
+                    <label className="form-label">Designation</label>
                     <input
                         type="text"
                         name="designation"
                         placeholder="Designation"
-                        className="adminInput"
+                        className="form-input"
                         onChange={handleChange} 
                         required/>
                 </div>
 
                 <div>
-                    <label className="adminLabel2">Department</label>
+                    <label className="form-label">Department</label>
                     <select
                         name="department"
-                        className="adminInput"
+                        className="form-select"
                         onChange={handleChange} 
                         required>
                             <option value="">Select Status</option>
@@ -133,39 +131,41 @@ const AddStaff = () => {
                 </div>
 
                 <div>
-                    <label className="adminLabel2">Salary</label>
+                    <label className="form-label">Salary</label>
                     <input
                         type="number"
                         name="salary"
                         placeholder="Salary"
-                        className="adminInput"
+                        className="form-input"
                         onChange={handleChange} 
                         required/>
                 </div>
 
                 <div>
-                    <label className="adminLabel2">Password</label>
+                    <label className="form-label">Password</label>
                     <input
                         type="password"
                         name="password"
                         placeholder="*******"
-                        className="adminInput"
+                        className="form-input"
                         onChange={handleChange} 
                         required/>
                 </div>
 
                 <div>
-                    <label className="adminLabel2">Upload Image</label>
+                    <label className="form-label">Upload Image</label>
                     <input
                         type="file"
                         name="image"
                         placeholder="Upload Image"
-                        className="adminInput"
+                        className="form-input"
                         onChange={handleChange} 
                         required/>
                 </div>
 
-                <button type="submit" className="addStaffBtn"> Add Employee</button>
+                <div className="full-width">
+                    <button type="submit" className="staff-button"> Add Staff</button>
+                </div>
             </form>
         </div>
     )

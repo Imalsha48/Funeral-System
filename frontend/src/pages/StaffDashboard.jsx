@@ -1,6 +1,5 @@
 import React from "react";
 import StaffSidebar from '../components/staff/StaffSidebar'
-import StaffNavbar from "../components/Staff/StaffNavbar";
 import StaffSummary from "../components/staff/StaffSummary";
 
 const StaffDashboard = () => {

@@ -17,11 +17,11 @@ const AdminAddDepartment = () => {
     }
 
     return(
-        <div className="adminAddDepartment">
-            <h2 className="adminH2">Add Department</h2>
+        <div className="">
+            <h2 className="">Add Department</h2>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="dep_name" className="adminAddDepLabel1">Department Name</label>
+                    <label htmlFor="dep_name" className="">Department Name</label>
                     <input 
                         type="text"
                         name="dep_name" 
@@ -30,8 +30,8 @@ const AdminAddDepartment = () => {
                         onChange={handleChange}/>
                 </div>
                     
-                <div className="adminAddDepContent">
-                    <label htmlFor="description" className="adminLabel2">Description</label>
+                <div className="">
+                    <label htmlFor="description" className="">Description</label>
                     <textarea 
                         name="description" 
                         id="description" 
@@ -41,7 +41,7 @@ const AdminAddDepartment = () => {
                     </textarea>
                 </div>
 
-                <button type="submit" className="adminAddDepSubmit">Add Department</button>
+                <button type="submit" className="">Add Department</button>
             </form>
         </div>
     )
